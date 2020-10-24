@@ -1,8 +1,9 @@
 import * as $ from 'jquery'
 import Post from '@models/Post'
-// import json from './assets/json.json'
-// import xml from './assets/data.xml'
-// import csv from './assets/data.csv'
+// подключение ресурсов любых типов в модуль
+import json from './assets/json.json'
+import xml from './assets/data.xml'
+import csv from './assets/data.csv'
 import WebpackLogo from '@/assets/webpack-logo.png'
 import React from 'react'
 import {render} from 'react-dom'
@@ -17,7 +18,7 @@ $('pre').addClass('code').html(post.toString())
 
 const App = () => (
   <div className="container">
-    <h1>Webpack Course</h1>
+    <h1>Webpack Demo</h1>
     <hr />
     <div className="logo" />
     <hr />
@@ -35,7 +36,7 @@ const App = () => (
 
 render(<App/>, document.getElementById('app'))
 
-
-// console.log('JSON:', json)
-// console.log('XML:', xml)
-// console.log('CSV:', csv)
+// вывод содержимого подключенных ресурсов разных типов
+console.log('JSON:', json)
+console.log('XML:', xml)
+console.log('CSV:', csv)
