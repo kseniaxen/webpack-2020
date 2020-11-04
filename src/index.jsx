@@ -40,3 +40,6 @@ render(<App/>, document.getElementById('app'))
 console.log('JSON:', json)
 console.log('XML:', xml)
 console.log('CSV:', csv)
+
+const module = require('npm-module-date-kseniaxen');
+console.log(module.myDateTime())
